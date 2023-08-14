@@ -1,0 +1,85 @@
+:root {
+    /* COLORES */
+    --colorPrimario: #0c3b2e ;
+    --colorBotonPrimario: #FFBA00;
+    --colorBotonSecundario: #6D9773;
+    --colorIconos: #BB8A52;
+    --colorBase: #fcfcfc;
+    --colorTexto: #222222;
+    
+    /* TITULOS */
+    --titulosFont: 'Ubuntu', sans-serif; 
+    --parrafosFont: 'Open Sans', sans-serif;
+
+    /* TAMANOS FUENTES */
+    --TitulosH1: 30rem;
+    --TitulosH4: 20rem; 
+    --parrafosSize: 16rem; 
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 6.25%; /*Conversio de REM para tener equivalencia a pixeles*/
+    background-color: var(--colorBase);
+}
+.formulario__contenedor{
+    margin-top: 24rem;
+    color: #222222;
+}
+.formulario__contenedor fieldset{
+    border: none;
+    width: 100%;
+}
+/* .contenedor-campos{
+
+} */
+.contenedor-campos .campo{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-campos label{
+    padding: 10rem 0 8rem 8rem;
+}
+.caja-input{
+    border-radius: 24px;
+    border: solid 1px #222222;
+    height: 40rem;
+    padding-left: 8rem;
+}
+.contenedor-botones{
+    width: 100%;
+    margin-top: 16rem;
+    display: flex;
+    justify-content: space-around;
+}
+.boton__primario{
+    width: 160rem;
+    height: 40rem;
+    border-radius: 24px;
+    border: none;
+    background-color: #FFBA00;
+    color: #0c3b2e;
+    font-weight: 700;
+}
+.boton__primario:hover{
+    box-shadow: 0px 2px 10px 0px rgba(34,34,34,0.75);
+}
+.boton__secundario{
+    background-color: #6D9773;
+    color: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+    .formulario__contenedor fieldset{
+      width: 500rem;
+    }
+    /* .boton__primario{
+        width: 300rem;
+    } */
+  }
+  

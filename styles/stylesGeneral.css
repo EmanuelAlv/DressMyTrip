@@ -1,0 +1,53 @@
+:root {
+    /* COLORES */
+    --colorPrimario: #0c3b2e ;
+    --colorBotonPrimario: #FFBA00;
+    --colorBotonSecundario: #6D9773;
+    --colorIconos: #BB8A52;
+    --colorBase: #fcfcfc;
+    --colorTexto: #222222;
+    
+    /* TITULOS */
+    --titulosFont: 'Ubuntu', sans-serif; 
+    --parrafosFont: 'Open Sans', sans-serif;
+
+    /* TAMANOS FUENTES */
+    --TitulosH1: 30rem;
+    --TitulosH4: 20rem; 
+    --parrafosSize: 16rem; 
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 6.25%; /*Conversion de REM para tener equivalencia a pixeles*/
+    background-color: var(--colorBase);
+}
+body{
+    font-family: var(--parrafosFont);
+    font-size: var(--parrafosSize);
+    /* line-height: 1.5; */
+}
+h1{
+    font-family: var(--titulosFont);
+    font-size: var(--TitulosH1);
+    color: var(--colorPrimario);
+}
+h4{
+    font-family: var(--titulosFont);
+    font-size: var(--TitulosH4);
+    color: var(--colorPrimario);
+    margin-bottom: 16rem;
+}
+p{
+    color: var(--colorTexto);
+}
+.contenedor{
+    padding: 16rem;
+}
+
+

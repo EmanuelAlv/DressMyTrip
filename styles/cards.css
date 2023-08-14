@@ -1,0 +1,62 @@
+:root {
+    /* COLORES */
+    --colorPrimario: #0c3b2e ;
+    --colorBotonPrimario: #FFBA00;
+    --colorBotonSecundario: #6D9773;
+    --colorIconos: #BB8A52;
+    --colorBase: #fcfcfc;
+    --colorTexto: #222222;
+    
+    /* TITULOS */
+    --titulosFont: 'Ubuntu', sans-serif; 
+    --parrafosFont: 'Open Sans', sans-serif;
+
+    /* TAMANOS FUENTES */
+    --TitulosH1: 30rem;
+    --TitulosH4: 20rem; 
+    --parrafosSize: 16rem; 
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 6.25%; /*Conversio de REM para tener equivalencia a pixeles*/
+    background-color: var(--colorBase);
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-top--background{
+    background-color: #0c3b2e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-top{
+    height: 25rem;
+    width: 100%;
+    max-width: 650rem;
+    background-color: var(--colorBase);
+    border-radius: 24rem 24rem 0 0;
+}
+.card{
+    /* position: absolute; */
+    top: -24px;
+    max-width: 650rem;
+    height: auto;
+    background-color: var(--colorBase);
+    /* border-radius: 26px 26px 0 0; */
+}
+
+@media (min-width: 768px) {
+    .card, .card-top{
+      max-width: 1440rem;
+    }
+  }
