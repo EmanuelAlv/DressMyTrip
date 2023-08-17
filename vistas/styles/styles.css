@@ -39,7 +39,7 @@
 html {
     font-size: 6.25%; /*Conversion de REM para tener equivalencia a pixeles*/
     background-color: var(--colorBaseDark);
-    position: relative;
+    /* position: relative; */
 }
 body{
     font-family: var(--parrafosFont);
@@ -59,6 +59,10 @@ h4{
 }
 p{
     color: var(--colorTexto);
+}
+ul li, a{
+    list-style: none;
+    text-decoration: none;
 }
 .contenedor{
     padding: 16rem;
