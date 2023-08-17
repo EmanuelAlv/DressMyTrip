@@ -1,0 +1,82 @@
+@import url('./styles.css');
+
+html{
+    background-color: var(--colorBase);
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-login{
+    background-color: var(--colorBase);
+    height: 700rem;
+    width: 1200rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 24px;
+}
+.bloque{
+    width: 600rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bloque p{
+    line-height: 2.5;
+}
+.bloque-derecho{
+    background-color: var(--colorBaseDark);
+    height: 100%;
+    border-radius: 24px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form h2{
+    margin-bottom: 15px;
+}
+.login-form input{
+    margin: 10px 0;
+    width: 350rem;
+    height: 35rem;
+    border-radius: 24px;
+    border: 1px solid #a2a2a2;
+    padding-left: 15rem;
+}
+.login-form button{
+    margin-top: 20px;
+    background-color: var(--colorBase);
+    border-radius: 24px;
+    border: 1px solid #a2a2a2;
+    color: #a2a2a2;
+    width: 150rem;
+    height: 40rem;
+}
+.login-form button:hover{
+    border: 1px solid var(--colorPrimario);
+    font-weight: bold;
+    color: var(--colorPrimario);transition: 0.5s;
+}
+.login-form input:hover{
+    border: 1px solid var(--colorPrimario);
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .contenedor-login{
+        flex-direction: column;
+    }
+    .bloque{
+        width: 100vw;
+    }
+  }
