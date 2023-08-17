@@ -4,7 +4,7 @@
 }
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 160rem);
+    grid-template-columns: repeat(auto-fill, 150rem);
     gap: 16rem;
     place-content: center;
   }

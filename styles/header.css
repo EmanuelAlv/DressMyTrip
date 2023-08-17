@@ -1,10 +1,10 @@
 .header-banner{
-    height: 35vh;
+    height: 350rem;
     background: var(--colorPrimario);
 }
 .contenedor-banner{
     width: 100%; 
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 } 
@@ -59,7 +59,9 @@
     margin-top: 24rem;
     color: var(--colorBase);
 }
-
+.header-subtitle{
+    margin-bottom: 50rem;
+}
 @media (min-width: 768px) {
     .contendor-navbar{
         width: 100%;
