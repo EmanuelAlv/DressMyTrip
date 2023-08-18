@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/checkout.css" class="stylesheet">
+    <link rel="stylesheet" href="./styles/inputs.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dress My Trip - Confirmar y pagar</title>
+</head>
+<body>
+    <header class="contenedor" style="background: var(--colorPrimario);">
+            <div class="contendor-navbar">
+                <div class="header-navbar-logo">
+                    <a href="./index.html"><img src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg" alt="Menu"></a>
+                </div>
+                <nav class="header-navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li>Descubrir</li>
+                        <li>My rents</li>
+                        <li>Perfil</li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="checkout-header">
+            <a href="./index.html"><i class="fa fa-angle-left" style="font-size:24px"></i></a>
+            <h2>Confirmar y pagar</h2>
+        </div>
+            <div class="checkout-content">
+                <div class="col-6 col-s-12 no-padding" style="margin:0 auto;">
+                    <div class="checkout-detail">
+                        <h3>Resúmen</h3>
+                        <div class="summary-layout">
+                            <div class="summary-content">
+                                <h4>Items</h4>
+                                <p>T-shirt</p>
+                                <p>2 items GTQ30.00 c/u por 3 días</p>
+                            </div>
+                            <a href="#">Editar</a>
+                        </div>
+                        <div class="summary-layout">
+                            <div class="summary-content">
+                                <h4>Fechas</h4>
+                                <p>23-26 de agosto</p>
+                            </div>
+                            <a href="#">Editar</a>
+                        </div>
+                        <div class="summary-layout flex-reverse">
+                            <div class="summary-content">
+                                <h4>Total</h4>
+                                <p>GTQ180.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-s-12 no-padding">
+                    <div class="row">
+                        <div class="checkout-detail">
+                            <h3>Método de envío</h3>
+                            <div class="field">
+                                <label for="">Dirección</label>
+                                <input type="text" class="input" placeholder="ej. 2av zona 1 Guatemala">
+                            </div>
+                            <div class="field">
+                                <label for="">Celular</label>
+                                <input type="number" class="input" placeholder="ej. 12120000">
+                            </div>
+                            <p>Seleccione su ubicación</p>
+                            <div class="map-content">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123536.74840860153!2d-90.57496155757082!3d14.626205572659265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a180655c3345%3A0x4a72c7815b867b25!2sCdad.%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1692241529290!5m2!1ses-419!2sgt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="checkout-detail">
+                            <h3>Datos de facturación</h3>
+                            <div style="display: flex; flex-direction: row; gap: 10px;">
+                                    <div class="field" style="width: calc(50% - 5px);">
+                                        <label for="">Nombre</label>
+                                        <input type="text" class="input" placeholder="ej. John Doe">
+                                    </div>
+                                    <div class="field" style="width: calc(50% - 5px);">
+                                        <label for="">Nit</label>
+                                        <input type="text" class="input" placeholder="ej. 101023250">
+                                    </div>
+                            </div>
+                            <div class="field">
+                                <label for="">Dirección de facturación</label>
+                                <input type="text" class="input" placeholder="ej. Ciudad">
+                            </div>
+                        </div>
+                        <div class="checkout-detail">
+                            <h3>Datos de pago</h3>
+                            <div class="credit-card-icons-layout">
+                                <i class="fa fa-cc-amex" style="font-size:24px"></i>
+                                <i class="fa fa-cc-visa" style="font-size:24px"></i>
+                                <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
+                                <i class="fa fa-cc-discover" style="font-size:24px"></i>
+                            </div>
+                            <div class="field">
+                                <label for="">Nombre de la tarjeta</label>
+                                <input type="text" class="input" placeholder="ej. John Doe">
+                            </div>
+                            <div class="field">
+                                <label for="">Número de la tarjeta</label>
+                                <input type="text" class="input" placeholder="ej. 1600 0000 0000 0000">
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 10px;">
+                                <div class="field" style="width: calc(50% - 5px);">
+                                    <label for="">Fecha de expiración</label>
+                                    <input type="text" class="input" placeholder="ej. 04/26">
+                                </div>
+                                <div class="field" style="width: calc(50% - 5px);">
+                                    <label for="">CVV</label>
+                                    <input type="text" class="input" placeholder="ej. 123">
+                                </div>
+                            </div>
+                            <br>
+                            <button class="flat-button">Reservar y pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>
