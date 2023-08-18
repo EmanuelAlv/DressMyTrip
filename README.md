@@ -1,3 +1,2 @@
 # DressMyTrip
 DressMyTrip
-# Prueba
