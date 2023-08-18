@@ -6,26 +6,26 @@
     <link rel="stylesheet" href="./styles/login.css">
     <title>Document</title>
 </head>
-<body><div class="contenedor-login">
-    <div class="bloque bloque-derecho login-container">
-        <form class="login-form">
-            <h2>Crea tu cuenta</h2>
-            <!-- <label for="username">Usuario:</label> -->
-            <input type="text" id="username" name="username" placeholder="Usuario" required >
-            <input type="email" id="email" name="usaermail" placeholder="Correo" required >
-            <input type="date" id="cumpleanos" name="cumpleanos" placeholder="Fecha nacimiento" required >
-            <!-- <label for="password">Contraseña:</label> -->
-            <input type="password" id="password" name="password" placeholder="Contraseña" required>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
-            <button type="submit">Crear cuenta</button>
-        </form>
+<body>
+    <div class="contenedor-login contenedor">
+        <div class="contenedor-form bloque">
+            <form class="login-form sign-in-form">
+                <h3>Crea tu cuenta</h3>
+                <!-- <label for="username">Usuario:</label> -->
+                <input type="text" id="username" name="username" placeholder="Usuario" required >
+                <input type="email" id="email" name="usaermail" placeholder="Correo" required >
+                <input type="date" id="cumpleanos" name="cumpleanos" placeholder="Fecha nacimiento" required >
+                <!-- <label for="password">Contraseña:</label> -->
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+                <button type="submit">Crear cuenta</button>
+            </form>
+            <div class="login-footer signin">
+                <p>¿Ya tienes cuenta? <a href="./login.html">Ingresa ahora</a></p>
+            </div>
+        </div>
     </div>
-    <div class="bloque bloque-izquierdo">
-        <h2>Bienvenido</h2>
-        <p>Encuentra la ropa que necesites donde sea que te encuentres.</p>
-        <p>¡Crea tu cuenta hoy mismo!</p>
-        <p>¿Ya tienes tu cuenta? <a href="./login.html">Inicia sesión</a></p>
-    </div>
-</div>
 </body>
 </html>
+
+

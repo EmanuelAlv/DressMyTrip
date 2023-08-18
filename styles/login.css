@@ -1,7 +1,7 @@
 @import url('./styles.css');
 
 html{
-    background-color: var(--colorBase);
+    background-color: #ebfdeb;
 }
 body{
     height: 100vh;
@@ -9,47 +9,41 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .contenedor-login{
-    background-color: var(--colorBase);
-    height: 700rem;
-    width: 1200rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
-    border-radius: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
-.bloque{
-    width: 600rem;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.bloque p{
-    line-height: 2.5;
-}
-.bloque-derecho{
-    background-color: var(--colorBaseDark);
-    height: 100%;
-    border-radius: 24px;
+.titulo-login{
+    height: 200rem;
 }
 .login-form{
+    width: 100%;
+}
+.bloque, .login-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.login-form h2{
-    margin-bottom: 15px;
+.bloque p, h2{
+    text-align: center;
 }
 .login-form input{
     margin: 10px 0;
-    width: 350rem;
+    width: 90vw;
+    max-width: 400rem;
     height: 35rem;
     border-radius: 24px;
     border: 1px solid #a2a2a2;
     padding-left: 15rem;
+}
+h2, h3{
+    margin-bottom: 25px;
+}
+a{
+    text-decoration: none;
+    color: var(--colorPrimario);
 }
 .login-form button{
     margin-top: 20px;
@@ -68,15 +62,20 @@ body{
 .login-form input:hover{
     border: 1px solid var(--colorPrimario);
 }
+
+.login-footer{
+    margin-top: 150rem;
+}
+.signin{
+    margin-top: 120rem;
+}
 label, input {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
-@media (max-width: 768px) {
-    .contenedor-login{
-        flex-direction: column;
-    }
-    .bloque{
-        width: 100vw;
-    }
-  }
+.sign-in-form{
+    margin-top: 80rem;
+}
+/* @media (min-width: 768px) {
+    
+  } */
