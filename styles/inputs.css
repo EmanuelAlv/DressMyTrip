@@ -1,0 +1,26 @@
+.input {
+    border-radius: 4px;
+    border: solid 1px #DDDEDF;
+    height: 40rem;
+    padding-left: 8rem;
+}
+
+.label {
+    padding: 10rem 0 8rem 8rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.flat-button {
+    background-color: black;
+    color: var(--colorBase);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
