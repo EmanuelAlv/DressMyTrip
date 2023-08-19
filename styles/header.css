@@ -62,6 +62,13 @@
 .header-subtitle{
     margin-bottom: 50rem;
 }
+
+.navbar-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .contendor-navbar{
         width: 100%;
