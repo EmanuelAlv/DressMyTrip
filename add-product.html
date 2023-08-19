@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/checkout.css" class="stylesheet">
+    <link rel="stylesheet" href="./styles/inputs.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Dress My Trip - Confirmar y pagar</title>
+</head>
+
+<body>
+    <header class="contenedor" style="background: var(--colorPrimario);">
+        <div class="contendor-navbar">
+            <div class="header-navbar-logo">
+                <a href="./index.html"><img
+                        src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg"
+                        alt="Menu"></a>
+            </div>
+            <nav class="header-navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Descubrir</li>
+                    <li>My rents</li>
+                    <li>Perfil</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="checkout-header">
+            <a href="./index.html"><i class="fa fa-angle-left" style="font-size:24px"></i></a>
+            <h2>Agregar Producto</h2>
+        </div>
+        <div class="checkout-content">
+
+            <div class="col-6 col-s-12 no-padding">
+                <div class="row">
+                    <div class="checkout-detail">
+                        <h3>Producto</h3>
+                        <div class="field">
+                            <label for="">Nombre</label>
+                            <input type="text" class="input" placeholder="ej: Blusa, pantalon">
+                        </div>
+                        <div class="field">
+                            <label for="">Descripcioón</label>
+                            <input type="textarea" class="input" placeholder="ej. 12120000">
+                        </div>
+                        <div class="field">
+                            <label for="tipoProducto">Tipo de Producto</label>
+
+                            <select name="tipoProducto" class="input" id="tipoProducto">
+                                <option disabled selected value>Selecciona una opción</option>
+                                <option value="Accesorio">Accesorio</option>
+                                <option value="Prenda">Prenda</option>
+                                <option value="opel">Abrigo</option>
+                                <option value="audi">Chaqueta</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="">Precio alquiler por día</label>
+                            <input type="number" class="input" placeholder="ej. Q100.25">
+                        </div>
+
+                        <div class="field">
+                            <label for="">Precio alquiler por semana</label>
+                            <input type="number" class="input" placeholder="ej. Q100.25">
+                        </div>
+                        <div class="field">
+                            <label for="">Precio alquiler por mes</label>
+                            <input type="number" class="input" placeholder="ej. Q100.25">
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-s-12 no-padding" style="margin:0 auto;">
+                <h3>Imagenes del producto</h3>
+                <div class="field">
+                    <label for="images" class="drop-container" id="dropcontainer">
+                        <span class="drop-title">Arrastra tus imagenes aqui...</span>
+                        ó
+                        <input type="file" id="images" accept="image/*" required>
+                    </label>
+                </div>
+                <button class="flat-button">Guardar Producto</button>
+
+            </div>
+    </main>
+</body>
+
+</html>
