@@ -33,6 +33,10 @@ function closeSidebar() {
   document.getElementById('myCart').style.display = 'none';
 }
 
+function goToCheckout() {
+  window.location.href = './checkout.html';
+}
+
 document.getElementById('myCart').innerHTML = `
     <div class="sidebar">
     <div class="sidebar-header">
@@ -49,7 +53,7 @@ document.getElementById('myCart').innerHTML = `
 
 function renderCartItem({ seller, items, total }) {
   return `
-    <div class="cart-item">
+    <div class="cart-item" onclick="goToCheckout()">
     <i class="fa fa-user" style="font-size: 24px;"></i>
     <div class="cart-item-content">
         <div class="cart-item-header">
