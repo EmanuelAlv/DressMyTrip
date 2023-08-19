@@ -4,6 +4,8 @@
 @import url('./gridProductos.css');
 @import url('./footer.css');
 @import url('./detalle-producto.css');
+@import url('./cart.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 :root {
     /* COLORES */
@@ -82,6 +84,7 @@ ul li, a{
     background-color: var(--colorBotonSecundario);
     color: var(--colorBaseDark);
     font-weight: 500;
+    cursor: pointer;
 }
 .boton__primario:hover{
     background-color: var(--colorPrimario);
@@ -91,6 +94,7 @@ ul li, a{
     background-color: var(--colorBaseDark);
     color: var(--colorBotonSecundario);
     border: 1px solid var(--colorBotonSecundario);
+    cursor: pointer;
 }
 
 .row::after {

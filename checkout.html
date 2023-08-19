@@ -11,6 +11,7 @@
 </head>
 <body>
     <header class="contenedor" style="background: var(--colorPrimario);">
+        <div class="navbar-layout">
             <div class="contendor-navbar">
                 <div class="header-navbar-logo">
                     <a href="./index.html"><img src="https://icon-library.com/images/hamburger-menu-icon-png-white/hamburger-menu-icon-png-white-10.jpg" alt="Menu"></a>
@@ -23,6 +24,11 @@
                         <li>Perfil</li>
                     </ul>
                 </nav>
+        </div>
+        <span style="cursor: pointer;" onclick="openSidebar()">
+            <i class="fa fa-cart-plus" style="color: white; font-size: 36px;"></i>
+        </span>
+        <div class="modal" id="myCart"></div>
         </div>
     </header>
     <main class="container">
@@ -125,4 +131,5 @@
             </div>
     </main>
 </body>
+    <script src="./scripts/cart.js"></script>
 </html>
